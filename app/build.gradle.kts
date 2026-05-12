@@ -1,10 +1,9 @@
-
 plugins {
     alias(libs.plugins.android.application)
 }
 
 android {
-    namespace = "com.example.caulator"
+    namespace = "com.example.waaaaaaaa"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -12,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.caulator"
+        applicationId = "com.example.waaaaaaaa"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -45,8 +44,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-    alias(libs.plugins.android.application) apply false
-98fd151 (Mô tả nội dung bạn đã thay đổi)
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
 }
